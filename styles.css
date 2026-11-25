@@ -54,8 +54,33 @@ a{color:inherit}
 .detail-language{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 .detail-divider{width:42px;height:1px;background:#c5a77d;margin:25px 0}
 .detail-note{font-family:"Playfair Display",Georgia,serif;font-size:16px;line-height:1.8;color:#655d51}
+
+.community-section{background:#eaf1e3;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:72px 28px}
+.community-inner,.feedback-inner{max-width:760px;margin:0 auto}
+.community-inner>h2,.feedback-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:36px;font-weight:400;letter-spacing:-.02em;margin:10px 0 12px}
+.community-intro{max-width:650px;color:var(--muted);font-size:13px;line-height:1.85;margin:0}
+.testimonials{margin-top:30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.empty-reflections{grid-column:1/-1;margin:0;padding:22px 24px;background:rgba(255,254,250,.65);border:1px solid var(--line);color:var(--muted);font-family:"Playfair Display",Georgia,serif;font-size:16px;line-height:1.7}
+.reflection-card{padding:23px 25px;background:var(--surface);border:1px solid var(--line)}
+.reflection-card blockquote{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:18px;line-height:1.7;color:#51483c}
+.reflection-attribution{margin:15px 0 0;color:var(--muted);font-size:11px}
+.feedback-section{padding:72px 28px 78px;background:var(--paper)}
+.feedback-form{margin-top:25px}
+.feedback-form textarea{display:block;width:100%;resize:vertical;min-height:130px;padding:15px 16px;border:1px solid #d7dfcf;border-radius:2px;background:var(--surface);color:var(--ink);font:13px/1.7 "DM Sans",Arial,sans-serif;outline:none}
+.feedback-form textarea:focus{border-color:#a98a60;box-shadow:0 0 0 2px rgba(152,116,71,.12)}
+.permission-option{display:flex;align-items:flex-start;gap:10px;margin-top:16px;color:var(--muted);font-size:11px;line-height:1.65}
+.permission-option input{margin:2px 0 0;accent-color:var(--accent-deep);flex:0 0 auto}
+.form-actions{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+.feedback-submit{border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fffefa;padding:12px 20px;font:600 11px "DM Sans",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.feedback-submit:hover{background:#5d442b}
+.feedback-submit:disabled{opacity:.55;cursor:wait}
+.feedback-status{font-size:12px;color:var(--accent-deep)}
+.privacy-note{margin:14px 0 0;color:var(--muted);font-size:10px;line-height:1.65}
+.website-field,.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
 @media(max-width:900px){.book-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}}
 @media(max-width:620px){
+  .community-section,.feedback-section{padding:54px 18px}.community-inner>h2,.feedback-inner>h2{font-size:31px}.testimonials{grid-template-columns:1fr}
   .site-header{height:70px;padding:0 18px}.brand-monogram{width:35px;height:35px;font-size:21px}.brand-name{font-size:17px}.header-nav a{font-size:10px}
   .intro{min-height:320px;padding:60px 20px}.intro h1{font-size:42px}.intro>p{font-size:13px}.desktop-break{display:none}
   .collection{padding:38px 18px 62px}.section-heading{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:23px}.section-heading h2{font-size:30px}
