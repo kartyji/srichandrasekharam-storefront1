@@ -6,16 +6,16 @@
     "cover": "mother-creator-sustainer-saviour.webp",
     "language": "English",
     "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
+    "description": "A reflection on motherhood as a powerful force in shaping character, culture and society. Drawing on Swami Vivekananda's thoughts on education, strength and character, the book recognises the lasting contribution of mothers in raising a thoughtful, responsible and compassionate generation."
   },
   {
     "id": "memory-tamil",
-    "title": "Gnabakam",
+    "title": "Gnabakam Enum Bhandam",
     "file": "memorybook-tamil-final-book.pdf",
     "cover": "memory-tamil.webp",
     "language": "Tamil",
     "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
+    "description": "A reflection on how memory shapes our sense of identity. The book explores the burden of holding on to past experiences, and how learning to set that burden down can bring lightness to life and gradually loosen the hold of the ego."
   },
   {
     "id": "nadanta-veli",
@@ -24,7 +24,7 @@
     "cover": "nadanta-veli.webp",
     "language": "Tamil",
     "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
+    "description": "“The first point of the universe is sound; the stillness into which that sound dissolves is silence.” This book explores the yogic journey from the sounds of the outer world to the silence within. Through reflections on Vedic mantras, ragas, breath and inner awareness, it brings together personal experience, the Vedas, the Thirumurai and perspectives from modern science in a simple spiritual guide."
   },
   {
     "id": "nadhiyin-nischalanam",
@@ -33,7 +33,7 @@
     "cover": "full_book_cover.png",
     "language": "Tamil",
     "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
+    "description": "Rather than viewing soul transmigration (Koodu Vittu Koodu Paaythal) as a bird simply flying away from one body to another, this book explores the deeper meaning behind these traditional accounts. Drawing upon Patanjali’s Yoga Sutras, it presents the phenomenon as a subtle yogic science involving thoughtless stillness, residual bodily airflow and the alignment of past impressions. Our body and brain are temporary boundaries, like the banks of a single living river flowing within us all. Through simple, reflective prose, the author invites readers to move beyond mechanical habits and discover the vastness of this inner stream. Ultimately, human birth is an invitation to flow without attachment and merge with the supreme energy of the universe."
   },
   {
     "id": "three-windows",
@@ -42,6 +42,6 @@
     "cover": "the-three-windows-to-one-sky.webp",
     "language": "English",
     "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
+    "description": "Over the years, whenever I read about India's three great spiritual traditions—Advaita, Vishishtadvaita and Dvaita—I felt the same quiet wonder. People often present them as three rival camps, locked in endless argument. Yet, when we look closely at the lives of our saints, the stories in our Puranas and the quiet growth of our own hearts, a very different picture emerges. These three paths were never meant to fight one another. Each emerged at a time in history when human beings needed its wisdom. Together, they reflect the different stages through which every human soul grows in its search for the Divine. This book is written simply, like elders sharing stories on a quiet evening porch—with no difficult words, no taking of sides, and deep gratitude for every path that leads a searching heart home."
   }
 ]
