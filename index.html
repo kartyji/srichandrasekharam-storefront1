@@ -39,6 +39,39 @@
       </div>
       <section id="book-grid" class="book-grid" aria-label="Book catalogue" aria-live="polite"></section>
     </section>
+
+    <section class="community-section" aria-labelledby="reflections-title">
+      <div class="community-inner">
+        <span class="eyebrow">A SHARED READING JOURNEY</span>
+        <h2 id="reflections-title">Readers’ Reflections</h2>
+        <p class="community-intro">A few thoughts shared by readers. Reflections are published only after they have been reviewed and permission has been given.</p>
+        <div id="testimonials" class="testimonials" aria-live="polite">
+          <p class="empty-reflections">Readers’ reflections will appear here as they are shared and approved.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-section" aria-labelledby="feedback-title">
+      <div class="feedback-inner">
+        <span class="eyebrow">YOUR THOUGHTS ARE WELCOME</span>
+        <h2 id="feedback-title">Share Your Feedback</h2>
+        <p class="community-intro">We would be happy to hear your thoughts, reflections or suggestions. You can write to us anonymously; no account or login is needed.</p>
+        <form id="feedback-form" class="feedback-form">
+          <label class="visually-hidden" for="feedback-message">Your feedback</label>
+          <textarea id="feedback-message" name="message" maxlength="3000" rows="5" placeholder="Write your feedback here..." required></textarea>
+          <label class="permission-option">
+            <input type="checkbox" name="permission">
+            <span>I give permission for my feedback to be considered for Readers’ Reflections if selected. I understand it will not be published automatically.</span>
+          </label>
+          <div class="form-actions">
+            <button class="feedback-submit" type="submit">Submit feedback</button>
+            <span id="feedback-status" class="feedback-status" role="status" aria-live="polite"></span>
+          </div>
+          <input class="website-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="privacy-note">Please do not include personal, financial or sensitive information. Feedback is reviewed privately before anything is considered for publication.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
