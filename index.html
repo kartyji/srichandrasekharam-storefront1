@@ -3,26 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f0e7">
+  <meta name="theme-color" content="#f7f4ed">
   <meta name="description" content="A collection of thoughts, stories and reflections for the journey within.">
   <title>Srichandrasekharam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="masthead">
-    <div class="brand-mark">S</div>
-    <div><h1>Srichandrasekharam</h1><p>A collection of thoughts, stories and reflections for the journey within.</p></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Srichandrasekharam home">
+      <span class="brand-monogram" aria-hidden="true">S</span>
+      <span class="brand-name">Srichandrasekharam</span>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#collection">The collection</a>
+    </nav>
   </header>
+
   <main>
-    <section class="section-heading"><div><span class="eyebrow">THE COLLECTION</span><h2>Books</h2></div><p>Thoughts and reflections, shared with readers.</p></section>
-    <section id="book-grid" class="book-grid" aria-label="Book catalogue"></section>
+    <section class="intro" aria-labelledby="site-title">
+      <div class="intro-rule"><span></span><span class="eyebrow">A SPACE FOR REFLECTION</span><span></span></div>
+      <h1 id="site-title">Srichandrasekharam</h1>
+      <p>A collection of thoughts, stories and reflections<br class="desktop-break"> for the journey within.</p>
+      <a class="intro-link" href="#collection">Explore the books <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">READ · REFLECT · DISCOVER</span>
+          <h2 id="collection-title">The collection</h2>
+        </div>
+        <p>Books and reflections, shared with readers.</p>
+      </div>
+      <section id="book-grid" class="book-grid" aria-label="Book catalogue" aria-live="polite"></section>
+    </section>
   </main>
-  <footer><span>Srichandrasekharam</span><span>Books written with the blessings of all my Gurus, parents and the Almighty.</span></footer>
-  <dialog id="book-dialog" class="book-dialog">
-    <button class="close" id="close-dialog" aria-label="Close">×</button>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#">Srichandrasekharam</a>
+    <p>Books written with the blessings of all my Gurus, parents and the Almighty.</p>
+  </footer>
+
+  <dialog id="book-dialog" class="book-dialog" aria-labelledby="detail-title">
+    <button class="close" id="close-dialog" type="button" aria-label="Close book details">×</button>
     <div class="dialog-layout">
-      <div class="dialog-cover"><div id="detail-cover" class="cover-placeholder">Cover image will appear here</div></div>
-      <div class="dialog-copy"><span class="eyebrow">BOOK DETAILS</span><h2 id="detail-title"></h2><p id="detail-language" class="muted"></p><h3>Preface</h3><p id="detail-preface" class="preface"></p><p class="small-note">Preview and purchase options will be enabled when secure book delivery is ready.</p></div>
+      <div class="dialog-cover"><div id="detail-cover" class="cover-placeholder">Cover image</div></div>
+      <div class="dialog-copy">
+        <span class="eyebrow">FROM THE COLLECTION</span>
+        <h2 id="detail-title"></h2>
+        <p id="detail-language" class="detail-language"></p>
+        <div class="detail-divider"></div>
+        <p class="detail-note">Thank you for taking an interest in this book. Further reading and purchase information will be shared here when available.</p>
+      </div>
     </div>
   </dialog>
   <script src="app.js"></script>
