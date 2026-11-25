@@ -2,7 +2,7 @@ let books=[];
 const grid=document.getElementById("book-grid");
 const bookDialog=document.getElementById("book-dialog");
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function coverUrl(book){return book.cover ? "covers/"+encodeURIComponent(book.cover).replace(/%2F/g,"/") : "";}
+function coverUrl(book){return book.cover ? encodeURIComponent(book.cover) : "";}
 function makeCard(book){
   const card=document.createElement("button");card.className="book-card";card.type="button";
   const cover=coverUrl(book);
