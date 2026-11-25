@@ -8,9 +8,9 @@
     "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
   },
   {
-    "id": "memory-bond-tamil",
-    "title": "Memory – The Bond",
-    "file": "Memory-theBond-Tam.pdf",
+    "id": "memory-tamil",
+    "title": "ஞாபகம் எனும் பந்தம்",
+    "file": "memorybook-tamil-final-book.pdf",
     "language": "Tamil",
     "price": null,
     "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
@@ -36,14 +36,6 @@
     "title": "The Three Windows to One Sky",
     "file": "The_Three_Windows_to_One_Sky(1).pdf",
     "language": "English",
-    "price": null,
-    "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
-  },
-  {
-    "id": "memory-tamil",
-    "title": "Memory",
-    "file": "memorybook-tamil-final-book.pdf",
-    "language": "Tamil",
     "price": null,
     "preface": "The preface will be added from the approved manuscript before the store opens for purchases."
   }
