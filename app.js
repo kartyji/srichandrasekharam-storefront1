@@ -1,6 +1,9 @@
 const grid=document.getElementById("book-grid");
 const bookDialog=document.getElementById("book-dialog");
 
+// Add only genuine reader comments here after reviewing them and receiving permission.
+const approvedReflections=[];
+
 function escapeHtml(value){
   return String(value).replace(/[&<>"']/g,char=>({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
@@ -52,10 +55,62 @@ function openBook(book){
   bookDialog.showModal();
 }
 
+function renderReflections(){
+  const container=document.getElementById("testimonials");
+  if(!approvedReflections.length) return;
+  container.replaceChildren();
+  approvedReflections.forEach(reflection=>{
+    const article=document.createElement("article");
+    article.className="reflection-card";
+    const quote=document.createElement("blockquote");
+    quote.textContent="“"+reflection.text+"”";
+    const attribution=document.createElement("p");
+    attribution.className="reflection-attribution";
+    attribution.textContent=reflection.attribution || "A reader";
+    article.append(quote,attribution);
+    container.append(article);
+  });
+}
+
 document.getElementById("close-dialog").addEventListener("click",()=>bookDialog.close());
 bookDialog.addEventListener("click",event=>{
   if(event.target===bookDialog) bookDialog.close();
 });
+
+const feedbackForm=document.getElementById("feedback-form");
+feedbackForm.addEventListener("submit",async event=>{
+  event.preventDefault();
+  const status=document.getElementById("feedback-status");
+  const submit=feedbackForm.querySelector('button[type="submit"]');
+  const formData=new FormData(feedbackForm);
+  const message=String(formData.get("message") || "").trim();
+  if(message.length<3){
+    status.textContent="Please add a little more detail before submitting.";
+    return;
+  }
+  submit.disabled=true;
+  status.textContent="Sending your feedback…";
+  try{
+    const response=await fetch("/api/feedback",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        message,
+        permission:formData.get("permission")==="on",
+        website:String(formData.get("website") || "")
+      })
+    });
+    if(!response.ok) throw new Error("Feedback service unavailable");
+    feedbackForm.reset();
+    status.textContent="Thank you. Your feedback has been received.";
+  }catch(error){
+    status.textContent="Feedback is not available just yet. Please try again later.";
+  }finally{
+    submit.disabled=false;
+  }
+});
+
+renderReflections();
 
 fetch("catalogue.json")
   .then(response=>{
