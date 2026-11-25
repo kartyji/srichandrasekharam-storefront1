@@ -1,10 +1,10 @@
 :root{
-  --paper:#f7f4ed;
-  --paper-deep:#eee8dc;
+  --paper:#f0f5e9;
+  --paper-deep:#e7efdf;
   --surface:#fffefa;
   --ink:#29251f;
   --muted:#777064;
-  --line:#e6dfd2;
+  --line:#dfe7d7;
   --accent:#987447;
   --accent-deep:#715332;
   --shadow:0 16px 42px rgba(53,42,27,.09);
@@ -13,13 +13,13 @@
 html{scroll-behavior:smooth;scroll-padding-top:88px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.site-header{height:82px;padding:0 max(28px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(247,244,237,.94)}
+.site-header{height:82px;padding:0 max(28px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(240,245,233,.96)}
 .brand{display:flex;align-items:center;gap:13px;text-decoration:none}
 .brand-monogram{width:39px;height:39px;border:1px solid #b99a70;border-radius:50%;display:grid;place-items:center;color:var(--accent-deep);font-family:"Playfair Display",Georgia,serif;font-size:24px;font-style:italic}
 .brand-name,.footer-brand{font-family:"Playfair Display",Georgia,serif;font-size:20px;letter-spacing:.015em}
 .header-nav a{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);transition:color .2s}
 .header-nav a:hover{color:var(--accent-deep)}
-.intro{min-height:360px;padding:74px 24px 68px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 0%,#fffefa 0%,#f7f4ed 70%)}
+.intro{min-height:360px;padding:74px 24px 68px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 0%,#fffefa 0%,#f0f5e9 72%)}
 .intro-rule{display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .intro-rule span:first-child,.intro-rule span:last-child{width:34px;height:1px;background:#c8b28f}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent-deep)}
@@ -41,7 +41,7 @@ a{color:inherit}
 .book-title{font-family:"Playfair Display",Georgia,serif;font-size:16px;line-height:1.4;margin:15px 0 6px}
 .book-language{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .cover-placeholder{height:100%;display:grid;place-items:center;padding:20px;text-align:center;color:var(--muted);font-size:12px}
-.site-footer{min-height:100px;border-top:1px solid var(--line);padding:26px max(28px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;background:#f1ede5}
+.site-footer{min-height:100px;border-top:1px solid var(--line);padding:26px max(28px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;background:#eaf1e3}
 .footer-brand{text-decoration:none;font-size:17px}
 .site-footer p{font-size:11px;line-height:1.6;color:var(--muted);margin:0;text-align:right}
 .book-dialog{position:relative;border:1px solid var(--line);border-radius:3px;padding:42px;max-width:780px;width:calc(100% - 32px);background:var(--surface);color:var(--ink);box-shadow:0 24px 90px rgba(27,22,15,.25)}
