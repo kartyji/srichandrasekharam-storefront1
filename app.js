@@ -39,6 +39,7 @@ function makeCard(book){
 function openBook(book){
   document.getElementById("detail-title").textContent=book.title;
   document.getElementById("detail-language").textContent=book.language;
+  document.getElementById("detail-description").textContent=book.description || "";
   const detailCover=document.getElementById("detail-cover");
   const cover=coverUrl(book);
   detailCover.innerHTML=cover
